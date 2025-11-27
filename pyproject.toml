@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "aaa-scanner"
+version = "0.1.0"
+description = "Scanner for AAA Project"
+authors = ["AAA Team"]
+readme = "README.md"
+packages = [{include = "aaa_scanner"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mss = "^9.0.1"
+requests = "^2.31.0"
+pillow = "^10.2.0"
+keyboard = "^0.13.5"
+
+[tool.poetry.group.dev.dependencies]
+pyinstaller = "^6.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
