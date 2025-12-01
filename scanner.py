@@ -10,8 +10,16 @@ import os
 import io
 from PIL import Image
 
+import configparser
+
 API_URL = "http://localhost:8000/match"
 TRIGGER_KEY = "F9" # Default key
+
+# Load Config
+config = configparser.ConfigParser()
+config.read("config.ini")
+CAPTURE_WIDTH = int(config.get("Scanner", "capture_width", fallback=400))
+CAPTURE_HEIGHT = int(config.get("Scanner", "capture_height", fallback=60))
 
 class ScannerApp:
     def __init__(self, root):
@@ -79,9 +87,9 @@ class ScannerApp:
                 width = monitor["width"]
                 height = monitor["height"]
                 
-                # Define capture area (e.g., 400x100 box at bottom right)
-                capture_width = 400
-                capture_height = 100
+                # Define capture area
+                capture_width = CAPTURE_WIDTH
+                capture_height = CAPTURE_HEIGHT
                 
                 monitor_region = {
                     "top": monitor["top"] + height - capture_height,

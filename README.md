@@ -2,6 +2,22 @@
 
 ## Requirements
 1.  **Discord ID**: You need your Discord User ID (Enable Developer Mode in Discord -> Right click your profile -> Copy ID).
+# AAA Scanner
+
+## Requirements
+1.  **Discord ID**: You need your Discord User ID (Enable Developer Mode in Discord -> Right click your profile -> Copy ID).
+
+## How to Run (Source)
+1.  Install dependencies: `poetry install`
+2.  Run: `poetry run python scanner.py`
+# AAA Scanner
+
+## Requirements
+1.  **Discord ID**: You need your Discord User ID (Enable Developer Mode in Discord -> Right click your profile -> Copy ID).
+# AAA Scanner
+
+## Requirements
+1.  **Discord ID**: You need your Discord User ID (Enable Developer Mode in Discord -> Right click your profile -> Copy ID).
 
 ## How to Run (Source)
 1.  Install dependencies: `poetry install`
@@ -9,8 +25,17 @@
     *   **Note**: You might need to run as Administrator for global keybinds to work in some games.
 
 ## How to Build (EXE)
-1.  Run `build.bat`
+1.  Run `.\build.bat`
 2.  The executable will be in the `dist` folder.
+
+## Configuration
+You can adjust the capture area in `config.ini` (created next to the executable/script):
+```ini
+[Scanner]
+capture_width = 400
+capture_height = 60
+```
+Adjust these values if the scanner is missing the UUID or capturing too much background.
 
 ## Usage
 1.  Run the `aaa-scanner.exe`.

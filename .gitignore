@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+.venv/
+
+# PyInstaller
+*.manifest
+*.spec
+build/
+dist/
+
+# Local Config & Data
+discord_id.txt
+config.ini
