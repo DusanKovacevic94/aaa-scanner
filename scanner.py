@@ -12,7 +12,7 @@ from PIL import Image
 
 import configparser
 
-API_URL = "http://localhost:8000/match"
+API_URL = "http://159.69.247.140:8000/match"
 TRIGGER_KEY = "F9" # Default key
 
 # Load Config
